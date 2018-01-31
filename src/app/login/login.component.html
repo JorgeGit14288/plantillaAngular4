@@ -7,7 +7,10 @@
       <input type="text" id="username" name="username" [(ngModel)]="model.username" placeholder="username" required/>
       <input type="password" id="password" name="password" [(ngModel)]="model.password" placeholder="password" required/>
       <button type="submit" class="btn btn-success">Submit</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
+      <p class="message22">Not registered? <a href="#">Create an account</a></p>
+    <div class="alert alert-warning" [hidden]="mensaje==''"  >
+      {{mensaje}} 
+   </div>
     </form>
   </div>
 </div>
